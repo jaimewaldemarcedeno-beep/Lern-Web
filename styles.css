@@ -1,0 +1,48 @@
+#page-title {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.theme {
+    min-width: 80%;
+    max-width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.title {
+    border-bottom: 2px solid black;
+}
+
+.theme-title {
+    font-size: 1.8 em;
+    margin-left:12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.infos {
+   margin-left: 16px;
+
+}
+
+ul {
+  list-style: none; /* Standard-Punkt entfernen */
+  padding-left: 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 20px; /* Abstand zwischen Text und individuellem Punkt */
+}
+
+ul li::before {
+  content: "•"; /* Eigenen Punkt definieren */
+  position: absolute;
+  left: 0; /* Exakte Position des Punktes im div */
+  color: black; /* Farbe des Punktes */
+}
