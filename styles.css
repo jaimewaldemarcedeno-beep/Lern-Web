@@ -1,33 +1,72 @@
+body {
+  font-family: Poppins, sans-serif;
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 4px;
+  font-size: 1.1em;
+  font-family: Poppins, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(210, 210, 210);
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(210, 210, 210);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: black;
+}
+
+a:focus {
+  color: rgb(210, 210, 210);
+  text-decoration: underline;
+}
+
+a:link {
+  color: black;
+}
+
 #page-title {
-    text-align: center;
-    font-size: 3em;
-    margin-top: 25px;
-    margin-bottom: 40px;
+  text-align: center;
+  font-size: 3em;
+  margin-top: 25px;
+  margin-bottom: 40px;
 }
 .theme {
-    min-width: 80%;
-    max-width: 95%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    border: 2px solid black;
+  min-width: 80%;
+  max-width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  border: 2px solid black;
 }
 
 .title {
-    border-bottom: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .theme-title {
-    font-size: 1.8 em;
-    margin-left:12px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+  font-size: 1.8 em;
+  margin-left: 12px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .infos {
-   margin-left: 16px;
-
+  margin-left: 16px;
 }
 
 ul {
@@ -35,9 +74,25 @@ ul {
   padding-left: 0;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
 ul li {
   position: relative;
   padding-left: 20px; /* Abstand zwischen Text und individuellem Punkt */
+  margin-bottom: 10px; /* Abstand zwischen den Listenelementen */
+  font-size: 1.1em; /* Schriftgröße der Listenelemente */
 }
 
 ul li::before {
