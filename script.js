@@ -51,18 +51,18 @@ function showtabelle(tabelle, btn) {
 function korrigieren(input, wörter, btn, btn2) {
   btn2.textContent = "Abschließen!";
 
-  input.forEach((element) => {
-    let userInput = element.textContent;
+  input.forEach((element, index) => {
+    // 1. Hier holen wir das korrekte Wort zum aktuellen Index:
+    let correctWord = wörter[index].textContent; // oder .value, je nachdem was für Elemente das sind
+
+    // 2. Jetzt kannst du prüfen, ob element.textContent zu correctWord passt!
+    if (element.textContent === correctWord) {
+      element.style.backgroundColor = "green";
+      btn.style.display = "none";
+    } else {
+      element.style.backgroundColor = "red";
+    }
   });
-  wörter.forEach((wort) => {
-    let correctWord = wort.textContent;
-  });
-  if (userInput === correctWord) {
-    element.style.backgroundColor = "green";
-    btn.style.display = "none";
-  } else {
-    element.style.backgroundColor = "red";
-  }
 }
 selbstverb.addEventListener("click", () =>
   showtabelle(selbsttabelle, selbstbtn),
