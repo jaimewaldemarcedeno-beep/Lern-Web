@@ -13,8 +13,12 @@ const correct = document.querySelector("#correct");
 const cancel = document.querySelector("#cancel");
 
 function abr(wörter, input, btn, korrekt, abruch) {
-  wörter.style.display = "block";
-  input.style.display = "none";
+  wörter.forEach((wort) => {
+    wort.style.display = "block";
+  });
+  input.forEach((element) => {
+    element.style.display = "none";
+  });
   btn.style.display = "block";
   korrekt.style.display = "none";
   abruch.style.display = "none";
