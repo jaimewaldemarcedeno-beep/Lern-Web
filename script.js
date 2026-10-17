@@ -59,15 +59,19 @@ function korrigieren(input, wörter, btn, btn2) {
     // 1. Hier holen wir das korrekte Wort zum aktuellen Index:
     let correctWord = wörter[index].textContent; // oder .value, je nachdem was für Elemente das sind
 
-    // 2. Jetzt kannst du prüfen, ob element.textContent zu correctWord passt!
-    if (element.textContent === correctWord) {
-      element.style.backgroundColor = "green";
+    if (element.value === correctWord) {
+      element.style.backgroundColor = "lightgreen";
       btn.style.display = "none";
     } else {
-      element.style.backgroundColor = "red";
+      element.style.backgroundColor = "lightcoral";
     }
   });
 }
+
+correct.addEventListener("click", () =>
+  korrigieren(selbstinput, selbstwörter, selbstbtn, cancel),
+);
+
 selbstverb.addEventListener("click", () =>
   showtabelle(selbsttabelle, selbstbtn),
 );
