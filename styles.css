@@ -51,6 +51,13 @@ a:link {
   color: black;
 }
 
+footer {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+
 #page-title {
   text-align: center;
   font-size: 3em;
