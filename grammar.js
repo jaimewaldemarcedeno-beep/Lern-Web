@@ -18,6 +18,8 @@ function abr(wörter, input, btn, korrekt, abruch) {
   });
   input.forEach((element) => {
     element.style.display = "none";
+    element.value = "";
+    element.style.backgroundColor = "white";
   });
   btn.style.display = "block";
   korrekt.style.display = "none";
@@ -56,10 +58,9 @@ function korrigieren(input, wörter, btn, btn2) {
   btn2.textContent = "Abschließen!";
 
   input.forEach((element, index) => {
-    // 1. Hier holen wir das korrekte Wort zum aktuellen Index:
-    let correctWord = wörter[index].textContent; // oder .value, je nachdem was für Elemente das sind
+    let correctWord = wörter[index].textContent.toLowerCase(); // oder .value, je nachdem was für Elemente das sind
 
-    if (element.value === correctWord) {
+    if (element.value.toLowerCase() === correctWord) {
       element.style.backgroundColor = "lightgreen";
       btn.style.display = "none";
     } else {
