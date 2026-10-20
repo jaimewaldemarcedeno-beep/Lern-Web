@@ -9,4 +9,4 @@ function show(obj) {
   }
 }
 
-liFu.addEventListener("click", show(hidden));
+liFu.addEventListener("click", () => show(hidden));
