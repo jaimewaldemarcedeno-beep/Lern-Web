@@ -68,6 +68,17 @@ footer {
   margin-right: 16px;
 }
 
+.inhalt {
+  display: flex;
+  text-align: center;
+  gap: 20px;
+}
+
+.inhalt img {
+  width: 25%;
+  height: auto;
+}
+
 #page-title {
   text-align: center;
   font-size: 3em;
