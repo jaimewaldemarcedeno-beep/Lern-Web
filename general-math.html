@@ -12,18 +12,99 @@
       <h1 id="page-title">Allgemeine Mathematik</h1>
     </header>
     <main>
-      <section class="theme">
+      <section class="theme" id="liFu">
         <div class="title">
           <h2 theme="theme-title">Gleichungssysteme</h2>
         </div>
         <div class="infos">
           <p>
             Es gibt verschiedene Methoden um Gleichungen zu lösen, dabei gibt es
-            besonders gute Methoden, wenn es expliziet zwei undefinierte
-            Variabeln gibt.
+            besondere Methoden, wenn es expliziet zwei undefinierte Variablen
+            gibt.
+          </p>
+        </div>
+        <div class="hide" id="hidden" style="display: none">
+          <p><strong>Das Additionsverfahren</strong></p>
+          <p>
+            Beim Additionsverfahren addiert man zwei Gleichungen davor muss man
+            jedoch noch etwas erledigen. <br />Zuvor muss man in jeder Gleichung
+            eine Variable auf den entgegensetzten koeffizienten bringen, damit
+            sich diese bei der Addition aufheben können. Danach bleibt eine
+            Gleichung mit nur einer Variablen übrig Den Wert der Variable kann
+            man dann mit Umformung berechnen. Nach dem man den Wert der Varaible
+            kennt kann man auch die andere Erfahren. <br />
+            (I) y = 2x + 1 <br />
+            (II) x + y = 7 <br />
+            (I) y = 2x + 1 |*-1 ; +2x<br />(I) -y + 2x = -1 <br />
+            (II) y + x = 7<br />
+            ________________+<br />
+            (III)0y + 3x = 6 |:3 <br />
+            (III)x = 2 <br />
+            (x in II) 2 + y = 7 |-2<br />
+            (II) y = 5
+          </p>
+          <p><strong>Das Einsetzungsverfahren</strong></p>
+          <p>
+            Beim Einsetzungsverfahren setzt man einen Wert einer Variable in die
+            andere Gleichung ein.<br />
+            Zuvor muss man jedoch eine Variable der Wahl alleine auf einer Seite
+            mithilfe Umformung bringen. Nach dem man den Wert dieser Variable
+            hat kann man diesen Wert in eine belibiege Gleichung einsetzen um
+            dann jediglich Umzuformen und den Wert einer Variable zu besitzen.
+            Mit dem Wert der einen Varaible kann man nun auch den anderen Wert
+            ermitteln.<br />
+            (I) y = 2x + 1 <br />
+            (II) x + y = 7 <br />
+            (y in II) x + (2x + 1) = 7 <br />
+            (II) 3x + 1 = 7 |-1 <br />
+            (II) 3x = 6 |:3 <br />
+            (II) x = 2 <br />
+            (x in I) y = 2 * 2 + 1 <br />
+            (I) y = 5
+          </p>
+          <p><strong>Das Gleichsetzungsverfahrenverfahren</strong></p>
+          <p>
+            Beim Gleichsetzungsverfahren stellt man beide Gleichungen nach
+            derselben Variablen um. Anschließend setzt man die beiden erhaltenen
+            Terme gleich. Dadurch erhält man eine Gleichung mit nur einer
+            Variablen. Nachdem man diese berechnet hat, kann man den Wert in
+            eine der ursprünglichen Gleichungen einsetzen, um die zweite
+            Variable zu bestimmen..<br />
+            (I) y = 2x + 1 <br />
+            (II) x + y = 7 |-x <br />
+            (II) y = 7 - x <br />
+            (I = II; III) 2x + 1 = 7 - x |+x |<br />
+            (III) 3x + 1 = 7 |-1 <br />
+            (III) 3x = 6 |:3<br />
+            (III) x = 2 <br />
+            (x in II) 2 + y = 7 |-2 <br />
+            (II) y = 5
           </p>
         </div>
       </section>
+
+      <section class="theme">
+        <div class="title">
+          <h2 class="theme-title">Mit Brüchen rechnen</h2>
+        </div>
+        <div class="infos">
+          <p>
+            Es ist wichtig mit Brüchen rechnen zu können.<br />
+            Dies kann vor allem bei Wahrscheinlichkeitsbrechnung hilfreich sein.
+          </p>
+          <div>
+            <p><strong>Brüche addieren und subtrahieren</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="theme">
+        <div class="title">
+          <h2 class="theme-title">Prozentrechnung</h2>
+        </div>
+        <div class="infos"></div>
+      </section>
     </main>
+    <script src="math.js"></script>
   </body>
 </html>
