@@ -59,7 +59,7 @@ function korrigieren(input, wörter, btn, btn2) {
 
   input.forEach((element, index) => {
     let correctWord = wörter[index].textContent.toLowerCase(); // oder .value, je nachdem was für Elemente das sind
-
+    console.log("etwas");
     if (element.value.toLowerCase() === correctWord) {
       element.style.backgroundColor = "lightgreen";
       btn.style.display = "none";
@@ -67,6 +67,13 @@ function korrigieren(input, wörter, btn, btn2) {
       element.style.backgroundColor = "lightcoral";
     }
   });
+}
+
+function enter(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    korrigieren(selbstinput, selbstwörter, selbstbtn, cancel);
+  }
 }
 
 correct.addEventListener("click", () =>
@@ -81,9 +88,14 @@ selbstbtn.addEventListener("click", (eve) => {
   eve.stopPropagation();
 
   clickFragen(selbstinput, correct, cancel, selbstwörter, selbstbtn);
+
+  selbstinput.forEach((element) => {
+    element.addEventListener("keydown", enter);
+  });
 });
 
 cancel.addEventListener("click", (eve) => {
   eve.stopPropagation();
   abr(selbstwörter, selbstinput, selbstbtn, correct, cancel);
+  selbstinput.removeEventListener("keydown", () => enter);
 });

@@ -37,7 +37,13 @@
             bestimmen in welchem Quadranten die Funktion den nicht zu
             definierten Anfang besitzt und wo das unendliche Ende ist.
           </p>
-          <p></p>
+          <p><strong>Monotonie</strong></p>
+          <p>
+            Die Monotonie beschreibt die Steigung der Funktion. Sie kann
+            entweder streng monoton steigend, streng monoton fallend oder
+            konstant sein. Mithilfe der Ableitung kann man die Monotonie
+            bestimmen.
+          </p>
         </div>
       </section>
 
@@ -54,34 +60,182 @@
             Der Graph einer linearen Funktion ist eine Gerade, die entweder
             steigt oder fällt, abhängig vom Vorzeichen von m.
           </p>
+          <p>
+            Der y-Achsenabschnitt ist der Punkt, an dem die Gerade die y-Achse
+            schneidet und ist ablesbar aus dem Wert von b.
+          </p>
         </div>
-        <div class="hide" id="hidden" style="display: none">
+        <div class="infos" id="hidden" style="display: none">
           <p><strong>Schnittpunkt</strong></p>
           <p>
             Um den Schnittpunkt zweier Linearen Funktionen zu bestimmen, muss
             man diese jediglich gleich setzen und dann mithilfe Umformung nach x
             auflösen.
           </p>
+          <p><strong>Nullstellen</strong></p>
+          <p>
+            Die Nullstellen einer linearen Funktion können durch Umformung
+            berechnet werden. Dazu wird die Funktion gleich 0 gesetzt und nach x
+            aufgelöst.
+          </p>
         </div>
       </section>
-      <section class="theme">
+      <section class="theme" id="liQu">
         <div class="title">
           <h2 class="theme-title">Quadratische Funktionen</h2>
         </div>
         <div class="infos">
           <p>
-            Quadratische Funktionen sind Funktionen, die in der Form f(x) = ax²
-            + bx + c dargestellt werden können, wobei a, b und c Konstanten
-            sind.
+            Quadratische Funktionen sind Funktionen, die in zwei der drei Formen
+            darzustellen sind, die Scheitelpunktform, die Allgemeineform und die
+            Normalparabel.
           </p>
           <p>
             Der Graph einer quadratischen Funktion ist eine Parabel, die
             entweder nach oben oder nach unten geöffnet ist, abhängig vom
-            Vorzeichen von a.
+            Koeffizienten a.
           </p>
           <p>
             Der Graph einer Quadratischen Funktion besitzt einen Scheitelpunkt,
             an der sich der Graph spiegelt.
+          </p>
+          <div class="infos" id="quFu" style="display: none">
+            <p><strong>Die drei Formen einer Quadratischen Funktion</strong></p>
+            <p>Die drei Formen einer quadratischen Funktion sind:</p>
+            <ul>
+              <li><p>Scheitelpunktform: f(x) = a(x - d)² + e</p></li>
+              <p>
+                An der Scheitelpunktform wird der Scheitelpunkt ( - d, e) direkt
+                abgelesen.<br />Durch das Auflösen des Binoms kann man die
+                Normalform erhalten und somit auch die Nullstellen erhalten.
+              </p>
+              <li><p>Allgemeine Form: f(x) = ax² + bx + c</p></li>
+              <p>
+                Die Allgemeine Form ist im gegensatz zur Normalform keine
+                normalparabel da es einen Koeffizienten für x² gibt.<br />Daher
+                kann man nicht die pq-Formel anwenden, sondern muss stattdessen
+                die Mitternachtsformel oder die quadratische Ergänzung
+                verwenden.
+              </p>
+              <li><p>Normalform: f(x) = x² + bx + c</p></li>
+              <p>
+                Die Normalform ist eine spezielle Form der quadratischen
+                Funktion, bei der der Koeffizient von x² gleich 1 ist.<br />Durch
+                die Anwendung der pq-Formel können die Nullstellen der Funktion
+                bestimmt werden.
+              </p>
+            </ul>
+            <p><strong>Verschiebung</strong></p>
+            <p>
+              Die Verschiebung einer quadratischen Funktion kann durch die
+              Veränderung der Parameter d und e in der Scheitelpunktform
+              durchgeführt werden.<br />Die Verschiebung nach rechts oder links
+              wird durch den Parameter d bestimmt, während die Verschiebung nach
+              oben oder unten durch den Parameter e bestimmt wird.
+            </p>
+            <div>
+              <p><strong>Nullstellen</strong></p>
+              <p>
+                Nullstellen sind die x-Werte, bei denen eine Funktion den Wert 0
+                annimmt. Sie können durch Umformung oder durch Anwendung der
+                pq-Formel berechnet werden. Der Unterschied zwischen den beiden
+                Methoden besteht darin, dass die Umformung eine algebraische
+                Methode ist, während die pq-Formel eine spezielle Formel für
+                quadratische Funktionen ist.
+              </p>
+              <p><strong>pq-Formel</strong></p>
+              <p>
+                Die pq-Formel ist eine Formel zur Berechnung der Nullstellen
+                einer quadratischen Funktion in der Normalform f(x) = x² + px +
+                q:<br />
+                f(x) = x² + px + q = 0 |-q<br />
+                -q = x² + px |+ (p/2)²<br />
+                -q + (p/2)² = x² + px + (p/2)²<br />
+                -q + (p/2)² = (x + p/2)² |√<br />
+                √(-q + (p/2)²) = x + p/2 |- (p/2)<br />
+                -p/2 ± √(-q + (p/2)²) = x₁, x₂
+              </p>
+              <p><strong>Mitternachtsformel</strong></p>
+              <p>
+                Die Mitternachtsformel ist eine Formel zur Berechnung der
+                Nullstellen einer quadratischen Funktion in der allgemeinen Form
+                f(x) = ax² + bx + c<br />
+                f(x) = ax² + bx + c = 0 |:a<br />
+                0/a = x² + (b/a)x + (c/a) | - (c/a)<br />
+                -(c/a) = x² + (b/a)x |+ (b/2a)²<br />
+                -(c/a) + (b/2a)² = x² + (b/a)x + (b/2a)²<br />
+                -(c/a) + (b/2a)² = (x + b/2a)² |√<br />
+                √(-(c/a) + (b/2a)²) = x + b/2a |- b/2a<br />
+                -b/2a ± √(-(c/a) + (b/2a)²) = x₁, x₂
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="theme">
+        <div class="title">
+          <h2 class="theme-title">Größere Funktionen</h2>
+        </div>
+        <div class="infos">
+          <p><strong>Generelle Eigenschaften</strong></p>
+          <p>
+            Größere Funktionen haben im Allgemeinen mehr Nullstellen, einen
+            komplexeren Verlauf und können verschiedene Eigenschaften wie
+            Symmetrie, Monotonie und Krümmung aufweisen. <br />Die Funktionen
+            haben mehrere Terme, diese werden vom größten Exponenten zum
+            kleinsten Exponenten geordnet. Mithilfe des Koeffizienten des
+            höchsten Exponenten kann man bestimmen in welchem Quadranten die
+            Funktion den nicht zu definierten Anfang besitzt und wo das
+            unendliche Ende ist.
+          </p>
+          <p><strong>Nullstellen</strong></p>
+          <p>
+            Die Nullstellen einer größeren Funktion können durch verschiedene
+            Methoden berechnet werden, wie zum Beispiel durch Umformung,
+            Polynomdivision oder Anwendung der Mitternachtsformel. Die
+            verschiedenen Methoden unterscheiden sich in ihrer Anwendbarkeit und
+            Komplexität, je nach Art der Funktion und der Anzahl der Terme. Die
+            Mitternachtsformel kann nur bei Funktionen mit 3 Termen angewendet
+            werden, während die Polynomdivision auch bei Funktionen mit mehr als
+            3 Termen angewendet werden kann, dabei muss der größte Exponent
+            doppelt so groß sein wie der zweitgrößte Exponent, dabei kann man
+            das durch substitution erreichen, damit der größte exponent gleich 2
+            ist. <br />Die Umformung ist eine allgemeine Methode, die bei allen
+            Arten von Funktionen angewendet werden kann, jedoch kann sie bei
+            komplexeren Funktionen schwieriger sein.<br />
+            Die Polynomdivision ist eine Methode, die bei Funktionen mit
+            mehreren Termen angewendet werden kann, jedoch benotigt sie bereits
+            eine Nullstelle, die man erraten oder anders erreicht werden muss.
+          </p>
+          <p><strong>Ableitungen und Extrempunkte</strong></p>
+          <p>
+            Die Ableitung einer Funktion gibt die Steigung der Funktion an einer
+            bestimmten Stelle an. <br />
+            Um die Ableitung einer Funktion zu berechnen, wendet man eine ganz
+            einfache Regel an: <br />
+            f(x) = xⁿ <br />
+            f'(x) = n * xⁿ⁻¹ <br />
+            Dabei kann man die Ableitung einer FUnktion mehrmals anwenden, um
+            verschiedene Information über die Funktion zu erhalten. <br />
+            Die erste Ableitung gibt uns die Steigung der Funktion an einer
+            bestimmten Stelle an. <br />
+            Die zweite Ableitung gibt uns die Krümmung der Funktion an einer
+            bestimmten Stelle an.(noch nicht gelernt) <br />
+            Die dritte Ableitung gibt uns die Veränderung der Krümmung der
+            Funktion an einer bestimmten Stelle an.(noch nicht gelernt) <br />
+            Die Extrempunkte einer Funktion sind die Punkte, an denen die
+            Funktion ihr temporäres Maximus oder temporäres Minimum erreicht.
+            <br />
+            Um die Extrempunkte einer Funktion zu finden, setzt man die
+            Ableitung der Funktion gleich 0 und löst nach x auf, da die Steigung
+            an diesen Punkten 0 ist. <br />
+            Danach setzt man nahe x Werte ein um bestimmen zu können, ob es sich
+            um ein temporäres Maximum oder Minimum handelt. <br />
+            Es kann auch sein, dass es sich um einen Sattelpunkt handelt, dabei
+            ist die Steigung an diesem Punkt 0, jedoch ist es weder ein
+            temporäres Maximum noch ein temporäres Minimum, sondern steigt nach
+            der Stelle 0 wieder an. <br />
           </p>
         </div>
       </section>

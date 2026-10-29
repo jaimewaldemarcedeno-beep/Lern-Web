@@ -1,8 +1,9 @@
 {
   "github.copilot.enable": {
     "*": true,
+    "plaintext": true,
     "markdown": true,
-    "plaintext": true
+    "scminput": true
   },
 
   "editor.quickSuggestions": {
@@ -12,5 +13,7 @@
   },
   "editor.suggestOnTriggerCharacters": true,
   "editor.quickSuggestionsDelay": 0,
+  "editor.suggest.insertMode": "replace",
+  "editor.suggest.commitCharacters": [" ", "(", ")"],
   "chat.disableAIFeatures": false
 }
