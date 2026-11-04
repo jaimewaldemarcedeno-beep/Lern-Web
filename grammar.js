@@ -12,6 +12,24 @@ const correct = document.querySelector("#correct");
 
 const cancel = document.querySelector("#cancel");
 
+const showcorrect = document.querySelector("#showcorrect");
+
+let h = false;
+
+function showcorrectbtn(input, wörter) {
+  if (h === false) {
+    input.forEach((element, index) => {
+      element.placeholder = wörter[index].textContent;
+    });
+    h = true;
+  } else if (h === true) {
+    input.forEach((element) => {
+      element.placeholder = "";
+    });
+    h = false;
+  }
+}
+
 function abr(wörter, input, btn, korrekt, abruch) {
   wörter.forEach((wort) => {
     wort.style.display = "block";
@@ -21,15 +39,17 @@ function abr(wörter, input, btn, korrekt, abruch) {
     element.value = "";
     element.style.backgroundColor = "white";
   });
+  showcorrect.style.display = "none";
   btn.style.display = "block";
   korrekt.style.display = "none";
   abruch.style.display = "none";
+  showcorrect.style.display = "none";
 }
 
 function clickFragen(input, korekt, abr, wörter, btn) {
   korekt.style.display = "block";
   abr.style.display = "block";
-
+  showcorrect.style.display = "block";
   wörter.forEach((wort) => {
     wort.style.display = "none";
   });
@@ -99,3 +119,7 @@ cancel.addEventListener("click", (eve) => {
   abr(selbstwörter, selbstinput, selbstbtn, correct, cancel);
   selbstinput.removeEventListener("keydown", () => enter);
 });
+
+showcorrect.addEventListener("click", () =>
+  showcorrectbtn(selbstinput, selbstwörter),
+);

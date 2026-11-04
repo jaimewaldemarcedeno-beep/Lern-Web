@@ -18,7 +18,7 @@ button:hover {
 }
 
 p {
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   font-size: 1.1em;
   font-family: Poppins, sans-serif;
 }
@@ -61,6 +61,7 @@ footer {
 .beschreibung {
   margin-left: 30px;
   margin-right: 30px;
+  margin-bottom: 20px;
 }
 
 .inhalt {
@@ -152,4 +153,8 @@ ul li::before {
   position: absolute;
   left: 0; /* Exakte Position des Punktes im div */
   color: black; /* Farbe des Punktes */
+}
+
+input ::placeholder {
+  color: black;
 }
