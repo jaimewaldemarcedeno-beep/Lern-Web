@@ -5,13 +5,17 @@ const quFu = document.querySelector("#quFu");
 const liQu = document.querySelector("#liQu");
 
 function show(obj) {
-  console.log("show");
+  if (!obj) return;
   if (obj.style.display === "none") {
     obj.style.display = "block";
   } else {
     obj.style.display = "none";
   }
 }
-liQu.addEventListener("click", () => show(quFu));
 
-liFu.addEventListener("click", () => show(hidden));
+if (liQu && quFu) {
+  liQu.addEventListener("click", () => show(quFu));
+}
+if (liFu && hidden) {
+  liFu.addEventListener("click", () => show(hidden));
+}

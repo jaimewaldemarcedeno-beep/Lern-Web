@@ -85,6 +85,7 @@ function korrigieren(input, wörter, btn, btn2) {
       btn.style.display = "none";
     } else {
       element.style.backgroundColor = "lightcoral";
+      element.value = "";
     }
   });
 }
