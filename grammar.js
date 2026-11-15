@@ -118,7 +118,9 @@ selbstbtn.addEventListener("click", (eve) => {
 cancel.addEventListener("click", (eve) => {
   eve.stopPropagation();
   abr(selbstwörter, selbstinput, selbstbtn, correct, cancel);
-  selbstinput.removeEventListener("keydown", () => enter);
+  selbstinput.forEach((element) => {
+    element.removeEventListener("keydown", enter);
+  });
 });
 
 showcorrect.addEventListener("click", () =>
